@@ -71,7 +71,7 @@ a:hover {
   background: gold;
 }
 .footer {
-  background: lawngreen;
+  background: #6495ed;
 }
 
 /* tablet breakpoint */
@@ -94,19 +94,19 @@ a:hover {
     order:-1;
   }
   .main-content {
-    width:50%;
-    max-width: 512px;
+    width:75%;
+    max-width: 768px;
     margin-left: 0 auto;
   }
   .left-sidebar {
-    width:25%;
-    max-width: 256px;
+    width:12.5%;
+    max-width: 128px;
     margin-left: auto;
     margin-right: 0;
   }
   .right-sidebar {
-    width:25%;
-    max-width: 256px;
+    width:12.5%;
+    max-width: 128px;
     margin-left: 0;
     margin-right: auto;
   }
