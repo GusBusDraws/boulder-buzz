@@ -19,6 +19,7 @@ header#header-canvas {
 
 h1, h2 {
   text-align: center;
+  margin-top: 5px;
 }
 
 /* Table header and data cells */
@@ -40,6 +41,11 @@ a:hover {
   color: black;
   text-decoration: underline;
   font-weight: bold;
+}
+
+.justified {
+  text-align: justify;
+  margin: 5px;
 }
 
 .bordered {
@@ -74,10 +80,10 @@ a:hover {
   background: white;
 }
 .left-sidebar {
-  background: gold;
+  background: #6495ed;
 }
 .right-sidebar {
-  background: gold;
+  background: #6495ed;
 }
 .footer {
   background: #6495ed;

@@ -62,4 +62,24 @@ function displayTable(csvData) {
 
   html += '</tbody></table>';
   document.getElementById('table-container').innerHTML = html;
+  const sub1 = 'mai'
+  const sub2 = 'lto'
+  const sub3 = 'boulder'
+  const sub4 = 'buzz'
+  const sub5 = 'submissions'
+  const sub6 = 'gm'
+  const sub7 = 'ail'
+  const sub8 = 'om'
+  const full = `${sub3}${sub4}${sub5}@${sub6}${sub7}.c${sub8}`
+  document.getElementById('submission-container').innerHTML = (
+    `<p>`
+    +`Have an event you'd like to see included?`
+    +`<br/>`
+    +`Send it to us! We prioritize free and community-led events :)`
+    // +`<br/>`
+    +`</p>`
+    +`<p>`
+    +`<a href="${sub1}${sub2}:${full}">${full}</a>`
+    +`</p>`
+  );
 }
