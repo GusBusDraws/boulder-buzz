@@ -21,6 +21,15 @@ h1, h2 {
   text-align: center;
 }
 
+/* Table header and data cells */
+table td:first-child {
+  text-align: right;
+}
+th, td {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -80,6 +89,9 @@ a:hover {
   .right-sidebar {
     width:50%;
   }
+  .dynamic-break {
+    display: none;
+  }
 }
 
 /* desktop breakpoint */
@@ -113,5 +125,8 @@ a:hover {
   .footer {
     max-width: 1024px;
     margin: 0 auto;
+  }
+  .dynamic-break {
+    display: in-line;
   }
 }
