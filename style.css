@@ -19,6 +19,16 @@ header#header-canvas {
 
 h1, h2 {
   text-align: center;
+  margin-top: 5px;
+}
+
+/* Table header and data cells */
+table td:first-child {
+  text-align: right;
+}
+th, td {
+  padding-left: 0px;
+  padding-right: 10px;
 }
 
 a {
@@ -31,6 +41,11 @@ a:hover {
   color: black;
   text-decoration: underline;
   font-weight: bold;
+}
+
+.justified {
+  text-align: justify;
+  margin: 5px;
 }
 
 .bordered {
@@ -64,21 +79,23 @@ a:hover {
 .main-content {
   background: white;
 }
-.left-sidebar {
-  background: gold;
-}
-.right-sidebar {
-  background: gold;
+.left-sidebar, .right-sidebar {
+  background: #6495ed;
+  display: none;
 }
 .footer {
-  background: lawngreen;
+  background: #6495ed;
 }
 
 /* tablet breakpoint */
 @media (min-width:768px) {
   .left-sidebar,
   .right-sidebar {
+    display: none;
     width:50%;
+  }
+  .dynamic-break {
+    display: none;
   }
 }
 
@@ -89,29 +106,31 @@ a:hover {
     max-width: 1024px;
     margin: 0 auto;
   }
+  .main-content {
+    width:75%;
+    max-width: 768px;
+  }
   .left-sidebar {
     /* left sidebar second (first in second row) */
     order:-1;
-  }
-  .main-content {
-    width:50%;
-    max-width: 512px;
-    margin-left: 0 auto;
-  }
-  .left-sidebar {
-    width:25%;
-    max-width: 256px;
+    display: block;
+    width:12.5%;
+    max-width: 128px;
     margin-left: auto;
     margin-right: 0;
   }
   .right-sidebar {
-    width:25%;
-    max-width: 256px;
+    display: block;
+    width:12.5%;
+    max-width: 128px;
     margin-left: 0;
     margin-right: auto;
   }
   .footer {
     max-width: 1024px;
     margin: 0 auto;
+  }
+  .dynamic-break {
+    display: in-line;
   }
 }
