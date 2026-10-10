@@ -2,6 +2,7 @@
 
 ## 2026-10-10
 
+- Update resizing CSS rules so sidebars disappear completely on small screens
 - Add site description and email for submissions
 - Match sidebar color to header and footer
 - Add a dynamic line break for table elements for more controlled multi-line viewing on mobile
